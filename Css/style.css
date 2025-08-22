@@ -1,0 +1,18 @@
+body{
+  /* Fundo com gradiente moderno */
+  background: linear-gradient(135deg, #7f53ac 0%, #647dee 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  /* Efeito de sombra suave */
+  box-shadow: 0 4px 32px 0 rgba(100, 125, 222, 0.15);
+  /* Animação de fade-in */
+  animation: fadeInBody 1.2s ease;
+}
+
+@keyframes fadeInBody {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
