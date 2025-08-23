@@ -1,0 +1,243 @@
+body {
+    background: #fff6fa;
+    font-family: 'Merriweather', 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    color: #3e2747;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.Receita_bolo-de-aniversario {
+    background: #fffafd;
+    max-width: 760px;
+    width: 96vw;
+    margin: 40px auto;
+    padding: 40px 32px 32px 32px;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(180, 60, 120, 0.10), 0 2px 8px rgba(180, 60, 120, 0.08);
+    position: relative;
+    overflow: hidden;
+    border: 1.5px solid #f8bbd0;
+    box-sizing: border-box;
+}
+
+.Receita_bolo-de-aniversario::before {
+    content: "";
+    position: absolute;
+    top: -60px;
+    left: -60px;
+    width: 160px;
+    height: 160px;
+    background: radial-gradient(circle, #f8bbd0 0%, #fff6fa 80%, transparent 100%);
+    opacity: 0.22;
+    z-index: 0;
+    pointer-events: none;
+}
+.Receita_bolo-de-aniversario::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, #f06292 0%, #fff6fa 80%, transparent 100%);
+    opacity: 0.15;
+    z-index: 0;
+    pointer-events: none;
+}
+.Receita_bolo-de-aniversario > * {
+    position: relative;
+    z-index: 1;
+}
+
+.Titulo_bolo-de-aniversario {
+    font-size: clamp(2rem, 5vw, 2.6rem);
+    font-weight: 900;
+    color: #ad1457;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    letter-spacing: 0.03em;
+    background: linear-gradient(90deg, #f06292 30%, #ad1457 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Pacifico', cursive, 'Merriweather', serif;
+    text-shadow: 0 2px 8px #fff0f6;
+}
+
+.Imagens {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.Imagens img {
+    width: clamp(120px, 40vw, 320px);
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 18px rgba(240, 98, 146, 0.18);
+    border: 3px solid #f8bbd0;
+    background: #fff0f6;
+    object-fit: cover;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.Imagens img:hover {
+    transform: scale(1.04) rotate(-1deg);
+    box-shadow: 0 8px 28px rgba(240, 98, 146, 0.22);
+}
+
+.Receita_bolo-de-aniversario p {
+    font-size: clamp(1.08rem, 2.5vw, 1.22rem);
+    color: #6d3e5b;
+    margin-bottom: 24px;
+    margin-top: 0;
+    line-height: 1.8;
+    background: #fce4ec;
+    padding: 18px 20px;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px rgba(240, 98, 146, 0.07);
+    font-family: 'Merriweather', serif;
+}
+
+.Receita_bolo-de-aniversario h3 {
+    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+    color: #f06292;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Merriweather', serif;
+    text-shadow: 0 1px 4px #fff0f6;
+}
+.Receita_bolo-de-aniversario h3::before {
+    content: "🎂";
+    font-size: 1.2em;
+    margin-right: 8px;
+    opacity: 0.85;
+}
+
+.Receita_bolo-de-aniversario ul,
+.Receita_bolo-de-aniversario ol {
+    margin-left: 24px;
+    margin-bottom: 20px;
+    font-size: clamp(1.05rem, 2vw, 1.15rem);
+    color: #4e2747;
+    background: #fff0f6;
+    padding: 16px 20px 16px 32px;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(240, 98, 146, 0.05);
+    box-sizing: border-box;
+    overflow-x: auto;
+    font-family: 'Merriweather', serif;
+}
+
+.Receita_bolo-de-aniversario ul li,
+.Receita_bolo-de-aniversario ol li {
+    margin-bottom: 10px;
+    line-height: 1.7;
+    transition: background 0.2s;
+    border-radius: 5px;
+    padding: 3px 6px;
+    cursor: pointer;
+    word-break: break-word;
+    background: transparent;
+}
+.Receita_bolo-de-aniversario ul li:hover,
+.Receita_bolo-de-aniversario ol li:hover {
+    background: #f8bbd0;
+}
+
+.Receita_bolo-de-aniversario ul li::marker,
+.Receita_bolo-de-aniversario ol li::marker {
+    color: #f06292;
+    font-size: 1.15em;
+}
+
+.Receita_bolo-de-aniversario h2 {
+    font-size: clamp(1.3rem, 3vw, 1.7rem);
+    color: #ad1457;
+    margin-top: 36px;
+    margin-bottom: 10px;
+    font-family: 'Pacifico', cursive, 'Merriweather', serif;
+    letter-spacing: 0.02em;
+    text-shadow: 0 1px 4px #fff0f6;
+}
+
+.Receita_bolo-de-aniversario h5 {
+    font-size: clamp(1rem, 2vw, 1.1rem);
+    color: #6d3e5b;
+    background: #fffde7;
+    padding: 14px 18px;
+    border-radius: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-family: 'Merriweather', serif;
+    box-shadow: 0 1px 6px rgba(240, 98, 146, 0.04);
+    line-height: 1.7;
+}
+
+.Receita_bolo-de-aniversario a {
+    color: #d81b60;
+    text-decoration: underline;
+    transition: color 0.2s;
+    font-weight: 600;
+}
+.Receita_bolo-de-aniversario a:hover {
+    color: #ad1457;
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    .Receita_bolo-de-aniversario {
+        max-width: 98vw;
+        padding: 7vw 2vw;
+        border-radius: 12px;
+    }
+    .Imagens img {
+        width: 90vw;
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 600px) {
+    .Receita_bolo-de-aniversario {
+        border-radius: 10px;
+        padding: 7vw 2vw;
+    }
+    .Titulo_bolo-de-aniversario {
+        gap: 4vw;
+        font-size: 1.5rem;
+    }
+    .Receita_bolo-de-aniversario p {
+        padding: 5vw 3vw;
+        font-size: 1rem;
+    }
+    .Receita_bolo-de-aniversario ul,
+    .Receita_bolo-de-aniversario ol {
+        padding: 4vw 2vw 4vw 6vw;
+        font-size: 1rem;
+    }
+    .Imagens img {
+        width: 80vw;
+        max-width: 220px;
+    }
+}
+
+@media (max-width: 400px) {
+    .Receita_bolo-de-aniversario {
+        padding: 4vw 1vw;
+    }
+    .Titulo_bolo-de-aniversario {
+        font-size: 1.1rem;
+    }
+    .Imagens img {
+        width: 60vw;
+        max-width: 120px;
+    }
+}
