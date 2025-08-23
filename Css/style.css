@@ -12,6 +12,22 @@ body{
   animation: fadeInBody 1.2s ease;
 }
 
+img {
+  display: block;
+  margin: 32px auto 0 auto;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(40, 40, 80, 0.25), 0 1.5px 8px 0 rgba(100, 125, 222, 0.10);
+  max-width: 90%;
+  height: auto;
+  transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
+}
+
+img:hover {
+  transform: scale(1.04) rotate(-1deg);
+  box-shadow: 0 16px 48px 0 rgba(40, 40, 80, 0.35), 0 3px 16px 0 rgba(100, 125, 222, 0.18);
+}
+
+
 @keyframes fadeInBody {
   from { opacity: 0; }
   to { opacity: 1; }
