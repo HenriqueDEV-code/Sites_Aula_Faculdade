@@ -12,7 +12,7 @@ body {
     background: #fffdfa;
     max-width: 760px;
     width: 96vw;
-    margin: 40px auto 40px auto;
+    margin: 40px auto;
     padding: 40px 32px 32px 32px;
     border-radius: 18px;
     box-shadow: 0 8px 32px rgba(180, 120, 60, 0.10), 0 2px 8px rgba(180, 120, 60, 0.08);
@@ -52,13 +52,13 @@ body {
 }
 
 .Titulo_bolo-leite-em-po {
-    font-size: clamp(2rem, 5vw, 2.8rem);
+    font-size: clamp(2rem, 5vw, 2.6rem);
     font-weight: 900;
     color: #d2691e;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
     display: flex;
     align-items: center;
-    gap: 18px;
+    gap: 16px;
     letter-spacing: 0.03em;
     background: linear-gradient(90deg, #ffb74d 30%, #ff9800 100%);
     -webkit-background-clip: text;
@@ -67,19 +67,24 @@ body {
     text-shadow: 0 2px 8px #fff3e0;
 }
 
-.Titulo_bolo-leite-em-po img {
-    width: clamp(56px, 12vw, 100px);
-    height: clamp(56px, 12vw, 100px);
-    object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 4px 18px rgba(255, 193, 7, 0.18);
-    margin-left: 0;
-    border: 3px solid #ffe0b2;
-    transition: transform 0.2s, box-shadow 0.2s;
-    background: #fff8e1;
+.Imagens {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
 }
-.Titulo_bolo-leite-em-po img:hover {
-    transform: scale(1.08) rotate(-2deg);
+
+.Imagens img {
+    width: clamp(120px, 40vw, 320px);
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 18px rgba(255, 193, 7, 0.18);
+    border: 3px solid #ffe0b2;
+    background: #fff8e1;
+    object-fit: cover;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.Imagens img:hover {
+    transform: scale(1.04) rotate(-1deg);
     box-shadow: 0 8px 28px rgba(255, 193, 7, 0.22);
 }
 
@@ -153,6 +158,42 @@ body {
     font-size: 1.15em;
 }
 
+.Receita_bolo-leite-em-po h2 {
+    font-size: clamp(1.3rem, 3vw, 1.7rem);
+    color: #d2691e;
+    margin-top: 36px;
+    margin-bottom: 10px;
+    font-family: 'Pacifico', cursive, 'Merriweather', serif;
+    letter-spacing: 0.02em;
+    text-shadow: 0 1px 4px #fff8e1;
+}
+
+.Receita_bolo-leite-em-po h5 {
+    font-size: clamp(1rem, 2vw, 1.1rem);
+    color: #6d4c41;
+    background: #fffde7;
+    padding: 14px 18px;
+    border-radius: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-family: 'Merriweather', serif;
+    box-shadow: 0 1px 6px rgba(255, 193, 7, 0.04);
+    line-height: 1.7;
+}
+
+@media (max-width: 800px) {
+    .Receita_bolo-leite-em-po {
+        max-width: 98vw;
+        padding: 7vw 2vw;
+        border-radius: 12px;
+    }
+    .Imagens img {
+        width: 90vw;
+        max-width: 320px;
+    }
+}
+
 @media (max-width: 600px) {
     .Receita_bolo-leite-em-po {
         border-radius: 10px;
@@ -171,9 +212,9 @@ body {
         padding: 4vw 2vw 4vw 6vw;
         font-size: 1rem;
     }
-    .Titulo_bolo-leite-em-po img {
-        width: 40px;
-        height: 40px;
+    .Imagens img {
+        width: 80vw;
+        max-width: 220px;
     }
 }
 
@@ -184,8 +225,8 @@ body {
     .Titulo_bolo-leite-em-po {
         font-size: 1.1rem;
     }
-    .Titulo_bolo-leite-em-po img {
-        width: 28px;
-        height: 28px;
+    .Imagens img {
+        width: 60vw;
+        max-width: 120px;
     }
 }
