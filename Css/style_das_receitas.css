@@ -1,0 +1,191 @@
+body {
+    background: #fff8f0;
+    font-family: 'Merriweather', 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    color: #3e2723;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.Receita_bolo-leite-em-po {
+    background: #fffdfa;
+    max-width: 760px;
+    width: 96vw;
+    margin: 40px auto 40px auto;
+    padding: 40px 32px 32px 32px;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(180, 120, 60, 0.10), 0 2px 8px rgba(180, 120, 60, 0.08);
+    position: relative;
+    overflow: hidden;
+    border: 1.5px solid #ffe0b2;
+    box-sizing: border-box;
+}
+
+.Receita_bolo-leite-em-po::before {
+    content: "";
+    position: absolute;
+    top: -60px;
+    left: -60px;
+    width: 160px;
+    height: 160px;
+    background: radial-gradient(circle, #ffe0b2 0%, #fff8f0 80%, transparent 100%);
+    opacity: 0.25;
+    z-index: 0;
+    pointer-events: none;
+}
+.Receita_bolo-leite-em-po::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, #ffcc80 0%, #fff8f0 80%, transparent 100%);
+    opacity: 0.18;
+    z-index: 0;
+    pointer-events: none;
+}
+.Receita_bolo-leite-em-po > * {
+    position: relative;
+    z-index: 1;
+}
+
+.Titulo_bolo-leite-em-po {
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    font-weight: 900;
+    color: #d2691e;
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    letter-spacing: 0.03em;
+    background: linear-gradient(90deg, #ffb74d 30%, #ff9800 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Pacifico', cursive, 'Merriweather', serif;
+    text-shadow: 0 2px 8px #fff3e0;
+}
+
+.Titulo_bolo-leite-em-po img {
+    width: clamp(56px, 12vw, 100px);
+    height: clamp(56px, 12vw, 100px);
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(255, 193, 7, 0.18);
+    margin-left: 0;
+    border: 3px solid #ffe0b2;
+    transition: transform 0.2s, box-shadow 0.2s;
+    background: #fff8e1;
+}
+.Titulo_bolo-leite-em-po img:hover {
+    transform: scale(1.08) rotate(-2deg);
+    box-shadow: 0 8px 28px rgba(255, 193, 7, 0.22);
+}
+
+.Receita_bolo-leite-em-po p {
+    font-size: clamp(1.08rem, 2.5vw, 1.22rem);
+    color: #6d4c41;
+    margin-bottom: 24px;
+    margin-top: 0;
+    line-height: 1.8;
+    background: #fff3e0;
+    padding: 18px 20px;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px rgba(255, 193, 7, 0.07);
+    font-family: 'Merriweather', serif;
+}
+
+.Receita_bolo-leite-em-po h3 {
+    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+    color: #ff9800;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Merriweather', serif;
+    text-shadow: 0 1px 4px #fff8e1;
+}
+.Receita_bolo-leite-em-po h3::before {
+    content: "🥄";
+    font-size: 1.2em;
+    margin-right: 8px;
+    opacity: 0.85;
+}
+
+.Receita_bolo-leite-em-po ul,
+.Receita_bolo-leite-em-po ol {
+    margin-left: 24px;
+    margin-bottom: 20px;
+    font-size: clamp(1.05rem, 2vw, 1.15rem);
+    color: #4e342e;
+    background: #fff8e1;
+    padding: 16px 20px 16px 32px;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(255, 193, 7, 0.05);
+    box-sizing: border-box;
+    overflow-x: auto;
+    font-family: 'Merriweather', serif;
+}
+
+.Receita_bolo-leite-em-po ul li,
+.Receita_bolo-leite-em-po ol li {
+    margin-bottom: 10px;
+    line-height: 1.7;
+    transition: background 0.2s;
+    border-radius: 5px;
+    padding: 3px 6px;
+    cursor: pointer;
+    word-break: break-word;
+    background: transparent;
+}
+.Receita_bolo-leite-em-po ul li:hover,
+.Receita_bolo-leite-em-po ol li:hover {
+    background: #ffe0b2;
+}
+
+.Receita_bolo-leite-em-po ul li::marker,
+.Receita_bolo-leite-em-po ol li::marker {
+    color: #ff9800;
+    font-size: 1.15em;
+}
+
+@media (max-width: 600px) {
+    .Receita_bolo-leite-em-po {
+        border-radius: 10px;
+        padding: 7vw 2vw;
+    }
+    .Titulo_bolo-leite-em-po {
+        gap: 4vw;
+        font-size: 1.5rem;
+    }
+    .Receita_bolo-leite-em-po p {
+        padding: 5vw 3vw;
+        font-size: 1rem;
+    }
+    .Receita_bolo-leite-em-po ul,
+    .Receita_bolo-leite-em-po ol {
+        padding: 4vw 2vw 4vw 6vw;
+        font-size: 1rem;
+    }
+    .Titulo_bolo-leite-em-po img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 400px) {
+    .Receita_bolo-leite-em-po {
+        padding: 4vw 1vw;
+    }
+    .Titulo_bolo-leite-em-po {
+        font-size: 1.1rem;
+    }
+    .Titulo_bolo-leite-em-po img {
+        width: 28px;
+        height: 28px;
+    }
+}
